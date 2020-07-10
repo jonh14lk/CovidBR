@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'api.dart';
 
-void main() {
-  init();
+void main() async {
+  await init();
   runApp(MaterialApp(home: MyApp()));
 }
 
@@ -16,7 +16,7 @@ var cardAspectRatio = 12.0 / 16.0;
 var widgetAspectRatio = cardAspectRatio * 1.2;
 
 class _MyAppState extends State<MyApp> {
-  var currentPage = 0.0;
+  var currentPage = estados.length - 1.0;
 
   @override
   Widget build(BuildContext context) {
@@ -108,7 +108,7 @@ class CardScrollWidget extends StatelessWidget {
         List<Widget> cardList = new List();
 
         for (var i = 0; i < estados.length; i++) {
-          print(i);
+          print(estados.length);
           var delta = i - currentPage;
           bool isOnRight = delta > 0;
 
