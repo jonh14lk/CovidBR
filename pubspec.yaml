@@ -1,0 +1,39 @@
+name: covidbr
+description: A new Flutter project.
+
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.12.1
+  cupertino_icons: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/image_01.jpg
+  fonts:
+    - family: SF-Pro-Text-Regular
+      fonts:
+        - asset: assets/SF-Pro-Text-Regular.otf
+
+    - family: SF-Pro-Text-Bold
+      fonts:
+        - asset: assets/SF-Pro-Text-Bold.otf
+
+    - family: Calibre-Semibold
+      fonts:
+        - asset: assets/Calibre Semibold.otf
+
+    - family: CustomIcons
+      fonts:
+        - asset: assets/custom_icons.ttf
