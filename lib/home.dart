@@ -69,7 +69,11 @@ class _MyAppState extends State<MyApp> {
               Stack(
                 children: <Widget>[
                   new Container(
+<<<<<<< HEAD
                     height: 1000,
+=======
+                    height: 1000, // This line solved the issue
+>>>>>>> master
                     child: MapWidget(),
                   ),
                 ],
