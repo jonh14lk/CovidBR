@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 int i;
 List<Estado> estados = [];
 
-void fetch(state) async {
+Future fetch(state) async {
   final res = await http.get(
       'https://covid19-brazil-api.now.sh/api/report/v1/brazil/uf/' + state);
   if (res.statusCode == 200) {
@@ -55,8 +55,8 @@ List<String> siglas = [
   "ms",
 ];
 
-void init() {
-  for (String s in siglas) {
-    fetch(s);
+Future init() async {
+  for (var i = 0; i < siglas.length; i++) {
+    await fetch(siglas[i]);
   }
 }
