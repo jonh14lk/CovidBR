@@ -1,16 +1,13 @@
-# covidbr
+# CovidBR
 
-A new Flutter project.
+App created with flutter and with the purpose to track the cases of COVID19 in the brazilian states.
 
-## Getting Started
+# Screenshots and GIFs
 
-This project is a starting point for a Flutter application.
+![](https://media0.giphy.com/media/WtIlPKlbDRksEJw1s4/giphy.gif)
+![](https://media2.giphy.com/media/Y1Mha91eWZV6pVthWE/giphy.gif)
 
-A few resources to get you started if this is your first Flutter project:
+# Sources
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1- [COVID-19 Brazil API](https://covid19-brazil-api.now.sh/).
+2- [Map theme(thunderforest)](https://covid19-brazil-api.now.sh/).
