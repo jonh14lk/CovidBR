@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'api.dart';
-import 'home.dart';
+import 'nav.dart';
 
 void main() async {
   await init();

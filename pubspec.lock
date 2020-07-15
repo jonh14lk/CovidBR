@@ -118,7 +118,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.10.1"
-<<<<<<< HEAD
   flutter_map_marker_popup:
     dependency: "direct main"
     description:
@@ -126,8 +125,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.4"
-=======
->>>>>>> master
   flutter_test:
     dependency: "direct dev"
     description: flutter

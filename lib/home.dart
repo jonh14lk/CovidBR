@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'api.dart';
 import 'cards.dart';
-import 'map.dart';
 
-class MyApp extends StatefulWidget {
+class CardsClass extends StatefulWidget {
   @override
-  _MyAppState createState() => new _MyAppState();
+  _CardsClassState createState() => new _CardsClassState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _CardsClassState extends State<CardsClass> {
   var currentPage = estados.length - 1.0;
 
   @override
@@ -64,18 +63,6 @@ class _MyAppState extends State<MyApp> {
                       },
                     ),
                   )
-                ],
-              ),
-              Stack(
-                children: <Widget>[
-                  new Container(
-<<<<<<< HEAD
-                    height: 1000,
-=======
-                    height: 1000, // This line solved the issue
->>>>>>> master
-                    child: MapWidget(),
-                  ),
                 ],
               ),
             ],
