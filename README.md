@@ -9,7 +9,7 @@ App created with flutter and with the purpose to track the cases of COVID19 in t
 
 # Run the app
 
-With the flutter on your computer, just run the command:
+With the flutter on your computer ans with terminal in the project folder, just run the command:
 
 ```c
 flutter run
