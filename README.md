@@ -20,4 +20,4 @@ It will run the app on the first device it recognizes, an phone or emulator
 # Sources
 
 1- [COVID-19 Brazil API](https://covid19-brazil-api.now.sh/).
-2- [Map theme(Thunderforest)](https://covid19-brazil-api.now.sh/).
+2- [Map theme(Thunderforest)](https://www.thunderforest.com/).
