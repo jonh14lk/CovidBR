@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'home.dart';
 import 'map.dart';
+import 'info.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -22,6 +23,7 @@ class _HomeState extends State<Home> {
   final tabs = [
     CardsClass(),
     MapWidget(),
+    InfoWidget(),
   ];
 
   @override
@@ -41,6 +43,10 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(
             title: Text("Mapa"),
             icon: Icon(Icons.map),
+          ),
+          BottomNavigationBarItem(
+            title: Text("Sobre"),
+            icon: Icon(Icons.info),
           ),
         ],
         onTap: (index) {
