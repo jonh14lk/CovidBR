@@ -65,7 +65,7 @@ class _MapPageState extends State<MapPage> {
     return FlutterMap(
       options: new MapOptions(
         zoom: 5.0,
-        center: _points[230],
+        center: _points.first,
         plugins: [PopupMarkerPlugin()],
         onTap: (_) => _popupLayerController.hidePopup(),
       ),

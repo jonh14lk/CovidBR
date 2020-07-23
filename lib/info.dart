@@ -28,6 +28,15 @@ _launchURL3() async {
   }
 }
 
+_launchURL4() async {
+  const url = 'https://www.trackcorona.live';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
 class InfoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -40,7 +49,7 @@ class InfoWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  'API usada',
+                  'APIs utilizadas',
                   style: TextStyle(
                     color: Colors.white,
                     fontFamily: "Calibre-Semibold",
@@ -51,6 +60,11 @@ class InfoWidget extends StatelessWidget {
                 OutlineButton(
                   onPressed: _launchURL,
                   child: Text('COVID-19 Brazil API'),
+                  textColor: Colors.purple[900],
+                ),
+                OutlineButton(
+                  onPressed: _launchURL4,
+                  child: Text('TrackCorona Live'),
                   textColor: Colors.purple[900],
                 ),
                 Text(
