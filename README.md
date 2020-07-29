@@ -19,7 +19,7 @@ flutter run
 It will run the app on the first device it recognizes, an phone or emulator.
 
 
-or download the APK for android by the [Link](https://gofile.io/d/TaqYZd).
+or download the APK for android by the [Link](https://github.com/jonh14lk/CovidBR/blob/master/app-release.apk).
 
 # Sources
 
