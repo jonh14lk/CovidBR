@@ -72,39 +72,41 @@ class Pair {
 }
 
 List<Pair> latlong = [
-  Pair(-23.55, -46.64),
-  Pair(-3.71, -38.54),
-  Pair(-22.84, -43.15),
-  Pair(-5.53, -52.29),
-  Pair(-12.96, -38.51),
-  Pair(-2.55, -44.30),
-  Pair(-18.10, -44.38),
-  Pair(-3.07, -61.66),
-  Pair(-15.83, -47.86),
-  Pair(-8.28, -35.07),
-  Pair(-19.19, -40.34),
-  Pair(-7.06, -35.55),
-  Pair(-24.89, -51.55),
-  Pair(-27.33, -49.44),
-  Pair(-30.01, -51.22),
+  Pair(-8.77, -70.55),
   Pair(-9.71, -35.73),
-  Pair(-10.90, -37.07),
-  Pair(-16.64, -49.31),
-  Pair(-5.22, -36.52),
-  Pair(-8.28, -43.68),
-  Pair(-12.64, -55.42),
   Pair(1.41, -51.77),
+  Pair(-3.07, -61.66),
+  Pair(-12.96, -38.51),
+  Pair(-3.71, -38.54),
+  Pair(-15.83, -47.86),
+  Pair(-19.19, -40.34),
+  Pair(-16.64, -49.31),
+  Pair(-2.55, -44.30),
+  Pair(-12.64, -55.42),
+  Pair(-20.51, -54.54),
+  Pair(-18.10, -44.38),
+  Pair(-24.89, -51.55),
+  Pair(-7.06, -35.55),
+  Pair(-5.53, -52.29),
+  Pair(-8.28, -35.07),
+  Pair(-8.28, -43.68),
+  Pair(-5.22, -36.52),
+  Pair(-30.01, -51.22),
+  Pair(-22.84, -43.15),
   Pair(-11.22, -62.80),
   Pair(1.89, -61.22),
-  Pair(-20.51, -54.54),
+  Pair(-27.33, -49.44),
+  Pair(-10.90, -37.07),
+  Pair(-23.55, -46.64),
   Pair(-10.25, -48.25),
-  Pair(-8.77, -70.55),
 ];
 
 Future init() async {
   estados = await fetchStates();
   countries = await fetchCountries();
+  estados.sort((a, b) => a.state.compareTo(b.state));
   for (var i = 0; i < estados.length; i++) {
+    print(estados[i].state);
     countries.add(Pais(
         confirmed: estados[i].cases,
         dead: estados[i].deaths,
