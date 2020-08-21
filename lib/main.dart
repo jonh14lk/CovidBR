@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'api.dart';
-import 'nav.dart';
+import 'API_connection/api.dart';
+import 'Navigation/nav.dart';
 
 void main() async {
   await init();

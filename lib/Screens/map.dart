@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong/latlong.dart';
-import 'flutter_map_marker_popup.dart';
-import 'api.dart';
+import '../Fluttermap/flutter_map_marker_popup.dart';
+import '../API_connection/api.dart';
 
 int curr_index;
 

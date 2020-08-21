@@ -106,7 +106,6 @@ Future init() async {
   countries = await fetchCountries();
   estados.sort((a, b) => a.state.compareTo(b.state));
   for (var i = 0; i < estados.length; i++) {
-    print(estados[i].state);
     countries.add(Pais(
         confirmed: estados[i].cases,
         dead: estados[i].deaths,

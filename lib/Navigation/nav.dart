@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
-import 'map.dart';
-import 'info.dart';
+import '../Screens/home.dart';
+import '../Screens/map.dart';
+import '../Screens/info.dart';
 
 class MyApp extends StatelessWidget {
   @override
