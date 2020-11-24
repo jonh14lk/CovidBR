@@ -113,4 +113,5 @@ Future init() async {
         latitude: latlong[i].first,
         longitude: latlong[i].second));
   }
+  estados = estados.reversed.toList();
 }

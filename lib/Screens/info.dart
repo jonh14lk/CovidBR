@@ -40,9 +40,19 @@ _launchURL4() async {
 class InfoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Color(0xFF1b1e44),
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+            colors: [
+              Color(0xFF1b1e44),
+              Color(0xFF2d3447),
+            ],
+            begin: Alignment.bottomCenter,
+            end: Alignment.topCenter,
+            tileMode: TileMode.clamp),
+      ),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
         body: Padding(
           padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
           child: Column(
@@ -60,12 +70,12 @@ class InfoWidget extends StatelessWidget {
                 OutlineButton(
                   onPressed: _launchURL,
                   child: Text('COVID-19 Brazil API'),
-                  textColor: Colors.purple[900],
+                  textColor: Colors.white,
                 ),
                 OutlineButton(
                   onPressed: _launchURL4,
                   child: Text('TrackCorona Live'),
-                  textColor: Colors.purple[900],
+                  textColor: Colors.white,
                 ),
                 Text(
                   'Tema do mapa',
@@ -79,7 +89,7 @@ class InfoWidget extends StatelessWidget {
                 OutlineButton(
                   onPressed: _launchURL2,
                   child: Text('Thunderforest'),
-                  textColor: Colors.purple[900],
+                  textColor: Colors.white,
                 ),
                 Text(
                   'Desenvolvedor do app',
@@ -93,7 +103,7 @@ class InfoWidget extends StatelessWidget {
                 OutlineButton(
                   onPressed: _launchURL3,
                   child: Text('Github'),
-                  textColor: Colors.purple[900],
+                  textColor: Colors.white,
                 ),
               ]),
         ),

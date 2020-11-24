@@ -21,14 +21,15 @@ class _CardsClassState extends State<CardsClass> {
 
     return Container(
       decoration: BoxDecoration(
-          gradient: LinearGradient(
-              colors: [
-            Color(0xFF1b1e44),
-            Color(0xFF2d3447),
-          ],
-              begin: Alignment.bottomCenter,
-              end: Alignment.topCenter,
-              tileMode: TileMode.clamp)),
+        gradient: LinearGradient(
+            colors: [
+              Color(0xFF1b1e44),
+              Color(0xFF2d3447),
+            ],
+            begin: Alignment.bottomCenter,
+            end: Alignment.topCenter,
+            tileMode: TileMode.clamp),
+      ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(

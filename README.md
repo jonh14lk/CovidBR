@@ -14,7 +14,7 @@ App created with flutter and with the purpose to track the cases of COVID19 in t
 
 <div align="center">
 
-![](https://media0.giphy.com/media/S6wb51xIItzw3QB8YM/giphy.gif) ![](https://media2.giphy.com/media/cOE5sPAueirx2ogZsA/giphy.gif) ![](https://media2.giphy.com/media/Z9V3nigOht236h3Gy1/giphy.gif)
+![](https://media3.giphy.com/media/pKtreG6cfHXx0p1AUU/giphy.gif) ![](https://i.ibb.co/jwQmZKL/Whats-App-Image-2020-11-23-at-21-29-09.jpg) ![](https://media4.giphy.com/media/JL5QLGlOWWcFJG5Ek0/giphy.gif)
 
 </div>
 
