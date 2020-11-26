@@ -4,6 +4,7 @@ import '../API_connection/api.dart';
 
 var cardAspectRatio = 12.0 / 16.0;
 var widgetAspectRatio = cardAspectRatio * 1.2;
+var width, height;
 
 class CardScrollWidget extends StatelessWidget {
   var currentPage;
@@ -17,8 +18,8 @@ class CardScrollWidget extends StatelessWidget {
     return new AspectRatio(
       aspectRatio: widgetAspectRatio,
       child: LayoutBuilder(builder: (context, contraints) {
-        var width = contraints.maxWidth;
-        var height = contraints.maxHeight;
+        width = contraints.maxWidth;
+        height = contraints.maxHeight;
 
         var safeWidth = width - 2 * padding;
         var safeHeight = height - 2 * padding;
