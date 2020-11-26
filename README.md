@@ -38,6 +38,3 @@ or download the APK for android by the [Link](https://github.com/jonh14lk/CovidB
 2- [TrackCorona Live](https://www.trackcorona.live/).
 3- [Map theme(Thunderforest)](https://www.thunderforest.com/).
 
-
-Um detalhe importante também é sobre o uso das estruturas de repetição(for e while) nas atividades da lista e nas provas. Como essa parte de repetição deve ser realizada usando recursão, acredito que estas não possam ser usadas enquanto os professores não derem elas nas aulas.
-
