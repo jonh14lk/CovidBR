@@ -2,7 +2,7 @@
 
 <h1>CovidBR</h1>
 
-![](https://img.shields.io/badge/size-19.6%20MB-brightgreen) ![](https://img.shields.io/badge/last%20commit-november-yellow) ![](https://img.shields.io/badge/Dart-95.3%25-blue)
+![](https://img.shields.io/badge/size-19.6%20MB-brightgreen) ![](https://img.shields.io/badge/last%20commit-november-yellow) ![](https://img.shields.io/badge/Dart-96.3%25-blue)
 
 <img src="https://i.ibb.co/0jMPMqs/virus.png" width="100" height="100"/>
 
@@ -14,7 +14,7 @@ App created with flutter and with the purpose to track the cases of COVID19 in t
 
 <div align="center">
 
-![](https://media1.giphy.com/media/BgBlHkvDrZgPTOQ28n/giphy.gif) ![](https://media0.giphy.com/media/STd80SkbvEtNmRnBWx/giphy.gif) ![](https://media4.giphy.com/media/JL5QLGlOWWcFJG5Ek0/giphy.gif)
+![](https://media4.giphy.com/media/2ECsOVIWOTAcfHKPu1/giphy.gif) ![](https://media4.giphy.com/media/JL5QLGlOWWcFJG5Ek0/giphy.gif)
 
 </div>
 
