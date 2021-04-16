@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong/latlong.dart';
 import '../Fluttermap/flutter_map_marker_popup.dart';
-import '../API_connection/api.dart';
+import '../Connection/connection.dart';
 
 int curr_index;
 
@@ -40,7 +40,6 @@ class _MapPageState extends State<MapPage> {
   static const _markerSize = 40.0;
   List<Marker> _markers;
 
-  // Used to trigger showing/hiding of popups.
   final PopupController _popupLayerController = PopupController();
 
   @override
@@ -150,11 +149,11 @@ class _ExamplePopupState extends State<ExamplePopup> {
             ),
             const Padding(padding: EdgeInsets.symmetric(vertical: 4.0)),
             Text(
-              "Casos: ${countries[curr_index].confirmed.toString()}",
+              "Cases: ${countries[curr_index].confirmed.toString()}",
               style: const TextStyle(fontSize: 12.0),
             ),
             Text(
-              "Mortes: ${countries[curr_index].dead.toString()}",
+              "Deaths: ${countries[curr_index].dead.toString()}",
               style: const TextStyle(fontSize: 12.0),
             ),
           ],

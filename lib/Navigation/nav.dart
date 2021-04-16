@@ -46,11 +46,11 @@ class _HomeState extends State<Home> {
               icon: Icon(Icons.reorder),
             ),
             BottomNavigationBarItem(
-              title: Text("Mapa"),
+              title: Text("Map"),
               icon: Icon(Icons.map),
             ),
             BottomNavigationBarItem(
-              title: Text("Sobre"),
+              title: Text("About"),
               icon: Icon(Icons.info),
             ),
           ],

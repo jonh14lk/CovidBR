@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
-import '../API_connection/api.dart';
+import '../Connection/connection.dart';
 
 var cardAspectRatio = 12.0 / 16.0;
 var widgetAspectRatio = cardAspectRatio * 1.2;
@@ -82,7 +82,7 @@ class CardScrollWidget extends StatelessWidget {
                             Padding(
                               padding: EdgeInsets.symmetric(
                                   horizontal: 16.0, vertical: 8.0),
-                              child: Text('Casos:',
+                              child: Text('Cases:',
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 20.0,
@@ -106,7 +106,7 @@ class CardScrollWidget extends StatelessWidget {
                             Padding(
                               padding: EdgeInsets.symmetric(
                                   horizontal: 16.0, vertical: 8.0),
-                              child: Text('Óbitos:',
+                              child: Text('Deaths:',
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 20.0,

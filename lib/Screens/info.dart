@@ -1,35 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-_launchURL() async {
-  const url = 'https://covid19-brazil-api.now.sh/';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
+String brazilApi = 'https://covid19-brazil-api.now.sh/';
+String trackCorona = 'https://www.trackcorona.live';
+String thunderforest = 'https://www.thunderforest.com/';
+String github = 'https://github.com/jonh14lk/CovidBR';
 
-_launchURL2() async {
-  const url = 'https://www.thunderforest.com/';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
-_launchURL3() async {
-  const url = 'https://github.com/jonh14lk';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
-
-_launchURL4() async {
-  const url = 'https://www.trackcorona.live';
+_launchURL(String url) async {
   if (await canLaunch(url)) {
     await launch(url);
   } else {
@@ -59,7 +36,7 @@ class InfoWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  'APIs utilizadas',
+                  'References',
                   style: TextStyle(
                     color: Colors.white,
                     fontFamily: "Calibre-Semibold",
@@ -68,17 +45,21 @@ class InfoWidget extends StatelessWidget {
                   ),
                 ),
                 OutlineButton(
-                  onPressed: _launchURL,
+                  onPressed: () => { 
+                    _launchURL(brazilApi)
+                  },
                   child: Text('COVID-19 Brazil API'),
                   textColor: Colors.white,
                 ),
                 OutlineButton(
-                  onPressed: _launchURL4,
+                  onPressed: () => {
+                    _launchURL(trackCorona)
+                  },
                   child: Text('TrackCorona Live'),
                   textColor: Colors.white,
                 ),
                 Text(
-                  'Tema do mapa',
+                  'Map theme',
                   style: TextStyle(
                     color: Colors.white,
                     fontFamily: "Calibre-Semibold",
@@ -87,12 +68,14 @@ class InfoWidget extends StatelessWidget {
                   ),
                 ),
                 OutlineButton(
-                  onPressed: _launchURL2,
+                  onPressed: () => {
+                    _launchURL(thunderforest)
+                  },
                   child: Text('Thunderforest'),
                   textColor: Colors.white,
                 ),
                 Text(
-                  'Desenvolvedor do app',
+                  'Github repository',
                   style: TextStyle(
                     color: Colors.white,
                     fontFamily: "Calibre-Semibold",
@@ -101,11 +84,14 @@ class InfoWidget extends StatelessWidget {
                   ),
                 ),
                 OutlineButton(
-                  onPressed: _launchURL3,
+                  onPressed: () => {
+                    _launchURL(github)
+                  },
                   child: Text('Github'),
                   textColor: Colors.white,
                 ),
-              ]),
+              ],
+            ),
         ),
       ),
     );

@@ -4,14 +4,17 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
 
+String BrazilApi = 'https://covid19-brazil-api.now.sh/api/report/v1';
+String BrazilApi2 = 'https://covid19-brazil-api.now.sh/api/report/v1/brazil/';
+String CountriesApi = 'https://www.trackcorona.live/api/countries';
+
 List<Estado> estados = [];
 List<Pais> countries = [];
 List<double> cases = [];
 List<double> deaths = [];
 
 class Estado {
-  int cases;
-  int deaths;
+  int cases, deaths;
   String state;
   Estado(this.cases, this.deaths, this.state);
   factory Estado.fromJson(dynamic json) {
@@ -21,11 +24,9 @@ class Estado {
 }
 
 class Pais {
-  int confirmed;
-  int dead;
+  int confirmed, dead;
   String location;
-  double latitude;
-  double longitude;
+  double latitude, longitude;
   Pais(
       {this.confirmed,
       this.dead,
@@ -43,8 +44,7 @@ class Pais {
 }
 
 class Pair {
-  double first;
-  double second;
+  double first, second;
   Pair(this.first, this.second);
 }
 
@@ -54,7 +54,7 @@ List<Estado> parseStates(String responseBody) {
 }
 
 Future<List<Estado>> fetchStates() async {
-  final res = await http.get('https://covid19-brazil-api.now.sh/api/report/v1');
+  final res = await http.get(BrazilApi);
   String st = res.body;
   st = st.substring(8);
   st = st.substring(0, st.length - 1);
@@ -67,7 +67,7 @@ List<Pais> parseCountries(String responseBody) {
 }
 
 Future<List<Pais>> fetchCountries() async {
-  final res = await http.get('https://www.trackcorona.live/api/countries');
+  final res = await http.get(CountriesApi);
   String st = res.body;
   st = st.substring(22);
   st = st.substring(0, st.length - 1);
@@ -75,12 +75,10 @@ Future<List<Pais>> fetchCountries() async {
 }
 
 Future<int> fetchCasesandDeaths() async {
-  String link = 'https://covid19-brazil-api.now.sh/api/report/v1/brazil/';
   DateTime now = DateTime.now();
-
   while (cases.length < 7) {
     String date = DateFormat('yyyyMMdd').format(now);
-    final res = await http.get(link + date);
+    final res = await http.get(BrazilApi2 + date);
     String st = res.body;
     st = st.substring(8);
     st = st.substring(0, st.length - 1);
@@ -96,10 +94,8 @@ Future<int> fetchCasesandDeaths() async {
     }
     now = now.subtract(Duration(days: 1));
   }
-
   cases = cases.reversed.toList();
   deaths = deaths.reversed.toList();
-
   return 0;
 }
 
@@ -121,6 +117,7 @@ Future init() async {
   estados = estados.reversed.toList();
 }
 
+// lattitude and longitude of brazilian states
 List<Pair> latlong = [
   Pair(-8.77, -70.55),
   Pair(-9.71, -35.73),

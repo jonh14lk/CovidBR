@@ -1,6 +1,6 @@
 import 'package:bezier_chart/bezier_chart.dart';
 import 'package:flutter/material.dart';
-import '../API_connection/api.dart';
+import '../Connection/connection.dart';
 import 'cards.dart';
 
 class CardsClass extends StatefulWidget {
@@ -102,7 +102,7 @@ class _CardsClassState extends State<CardsClass> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
-                          "Gráficos (Brasil)",
+                          "Plots (Brazil)",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 25.0,
@@ -135,7 +135,7 @@ class _CardsClassState extends State<CardsClass> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
                                     Text(
-                                      "Casos nos últimos 7 dias",
+                                      "Cases in the last 7 days",
                                       style: TextStyle(
                                         fontSize: 20.0,
                                         color: Color(0xFF2d3447),
@@ -163,7 +163,7 @@ class _CardsClassState extends State<CardsClass> {
                                         ],
                                         series: [
                                           BezierLine(
-                                            label: "casos",
+                                            label: "cases",
                                             data: [
                                               DataPoint<double>(
                                                   value: cases[0], xAxis: 1),
@@ -218,7 +218,7 @@ class _CardsClassState extends State<CardsClass> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
                                     Text(
-                                      "Mortes nos últimos 7 dias",
+                                      "Deaths in the last 7 days",
                                       style: TextStyle(
                                         fontSize: 20.0,
                                         color: Color(0xFF2d3447),
@@ -246,7 +246,7 @@ class _CardsClassState extends State<CardsClass> {
                                         ],
                                         series: [
                                           BezierLine(
-                                            label: "mortes",
+                                            label: "deaths",
                                             data: [
                                               DataPoint<double>(
                                                   value: deaths[0], xAxis: 1),
